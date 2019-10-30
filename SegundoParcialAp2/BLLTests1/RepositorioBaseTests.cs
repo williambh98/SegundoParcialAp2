@@ -16,8 +16,9 @@ namespace BLL.Tests
         public void GuardarTest()
         {
             Trasacciones trasacciones = new Trasacciones();
-            trasacciones.TrasaccionID = 1;
-
+            trasacciones.Tipo = "Credito";
+            trasacciones.Monto = 200;
+            trasacciones.Fecha = DateTime.Now;
             RepositorioBase<Trasacciones> repositorioBase = new RepositorioBase<Trasacciones>();
             Assert.IsTrue(repositorioBase.Guardar(trasacciones));
         }

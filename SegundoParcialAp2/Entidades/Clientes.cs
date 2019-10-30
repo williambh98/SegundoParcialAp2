@@ -18,7 +18,7 @@ namespace Entidades
 
         public decimal Balance { get; set; }
 
-        Clientes()
+       public  Clientes()
         {
             this.ClienteID = 0;
             this.Nombre = string.Empty;

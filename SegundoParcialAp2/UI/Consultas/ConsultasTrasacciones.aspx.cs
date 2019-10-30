@@ -74,7 +74,7 @@ namespace SegundoParcialAp2.UI.Consultas
             MyEstudiantesReportViewer.Reset();
             MyEstudiantesReportViewer.LocalReport.ReportPath = Server.MapPath(@"\Reportes\ReportesTrasacciones.rdlc");
             MyEstudiantesReportViewer.LocalReport.DataSources.Clear();
-            MyEstudiantesReportViewer.LocalReport.DataSources.Add(new ReportDataSource("Trasacciones", Metodo.segTrasacciones()));
+            MyEstudiantesReportViewer.LocalReport.DataSources.Add(new ReportDataSource("Trasacciones", Metodo.SegTransacciones()));
             MyEstudiantesReportViewer.LocalReport.Refresh();
         }
 

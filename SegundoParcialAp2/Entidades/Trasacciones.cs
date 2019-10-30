@@ -19,7 +19,7 @@ namespace Entidades
 
         public DateTime Fecha { get; set; }
 
-        Trasacciones()
+       public Trasacciones()
         {
             this.TrasaccionID = 0;
             this.Tipo = string.Empty;
