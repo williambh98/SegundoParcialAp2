@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "SegundoParcialAp2\DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "SegundoParcialAp2\Entidades\Entidades.csproj", "{D3579D6F-DF16-4EB5-8E74-DE71A8BB2679}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLLTests1", "SegundoParcialAp2\BLLTests1\BLLTests1.csproj", "{A21773C9-B394-4E1B-B5B1-8D17F293274B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D3579D6F-DF16-4EB5-8E74-DE71A8BB2679}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3579D6F-DF16-4EB5-8E74-DE71A8BB2679}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3579D6F-DF16-4EB5-8E74-DE71A8BB2679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A21773C9-B394-4E1B-B5B1-8D17F293274B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21773C9-B394-4E1B-B5B1-8D17F293274B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21773C9-B394-4E1B-B5B1-8D17F293274B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21773C9-B394-4E1B-B5B1-8D17F293274B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

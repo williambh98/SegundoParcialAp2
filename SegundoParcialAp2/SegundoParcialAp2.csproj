@@ -76,6 +76,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="UI\Consultas\ConsultasTrasacciones.aspx" />
     <Content Include="UI\R.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultasTrasacciones.aspx.cs">
+      <DependentUpon>ConsultasTrasacciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultasTrasacciones.aspx.designer.cs">
+      <DependentUpon>ConsultasTrasacciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\R.aspx.cs">
       <DependentUpon>R.aspx</DependentUpon>
