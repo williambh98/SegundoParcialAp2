@@ -21,5 +21,27 @@ namespace BLL.Tests
             RepositorioBase<Trasacciones> repositorioBase = new RepositorioBase<Trasacciones>();
             Assert.IsTrue(repositorioBase.Guardar(trasacciones));
         }
+
+        [TestMethod()]
+        public void ModificarTest()
+        {
+            Trasacciones trasacciones = new Trasacciones();
+            trasacciones.TrasaccionID = 1;
+            trasacciones.Fecha = DateTime.Now;
+            trasacciones.Tipo = "Efectivo";
+            trasacciones.Monto = 1500;
+
+            RepositorioBase<Trasacciones> repositorioBase = new RepositorioBase<Trasacciones>();
+            Assert.IsTrue(repositorioBase.Modificar(trasacciones));
+        }
+
+        [TestMethod()]
+        public void EliminarTest()
+        {
+            Trasacciones trasacciones = new Trasacciones();
+            RepositorioBase<Trasacciones> repositorioBase = new RepositorioBase<Trasacciones>();
+            trasacciones.TrasaccionID = 1;
+            Assert.AreEqual(true, repositorioBase.Eliminar(trasacciones.TrasaccionID));
+        }
     }
 }

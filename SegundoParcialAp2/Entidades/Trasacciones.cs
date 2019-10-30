@@ -13,7 +13,7 @@ namespace Entidades
         [Key]
         public int TrasaccionID { get; set; }
 
-        public decimal Tipo { get; set; }
+        public string Tipo { get; set; }
 
         public decimal Monto { get; set; }
 
@@ -22,12 +22,12 @@ namespace Entidades
         Trasacciones()
         {
             this.TrasaccionID = 0;
-            this.Tipo = 0;
+            this.Tipo = string.Empty;
             this.Monto = 0;
             this.Fecha = DateTime.Now;
         }
 
-        public Trasacciones(int trasaccionID, decimal tipo, decimal monto, DateTime fecha)
+        public Trasacciones(int trasaccionID, string tipo, decimal monto, DateTime fecha)
         {
             TrasaccionID = trasaccionID;
             Tipo = tipo;
