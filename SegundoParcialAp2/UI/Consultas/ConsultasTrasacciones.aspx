@@ -63,7 +63,7 @@
                         <asp:HyperLinkField ControlStyle-ForeColor="blue"
                             DataNavigateUrlFields="TrasaccionID"
                             
-                          <%--  DataNavigateUrlFormatString="~/UI/Registros/RegistrosTrasacciones.aspx?Id={0}"--%>
+                           DataNavigateUrlFormatString="~/UI/Registros/RegistrosTrasacciones.aspx?Id={0}"
                             Text="Editar"></asp:HyperLinkField>
                     </Columns>
                     <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -90,7 +90,7 @@
                         </div>
                         <div class="modal-body">
                             <%--Viewer--%>
-                            <rsweb:ReportViewer ID="MyEstudiantesReportViewer" runat="server" ProcessingMode="Local" Height="400px" Width="500px">
+                            <rsweb:ReportViewer ID="ReportTransacciones" runat="server" ProcessingMode="Local" Height="400px" Width="500px">
                                 <ServerReport ReportPath="" ReportServerUrl="" />
                             </rsweb:ReportViewer>
                         </div>

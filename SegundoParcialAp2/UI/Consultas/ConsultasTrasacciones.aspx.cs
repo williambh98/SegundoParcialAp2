@@ -16,6 +16,8 @@ namespace SegundoParcialAp2.UI.Consultas
         static List<Trasacciones> lista = new List<Trasacciones>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            DesdeTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            HastaTextBox.Text = DateTime.Now.ToString("yyyy-MM-dd");
             if (!Page.IsPostBack)
             {
                 LlenaReport();
@@ -70,12 +72,13 @@ namespace SegundoParcialAp2.UI.Consultas
         public void LlenaReport()
         {
             ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "Popup", $"ShowReporte('');", true);
-            MyEstudiantesReportViewer.ProcessingMode = ProcessingMode.Local;
-            MyEstudiantesReportViewer.Reset();
-            MyEstudiantesReportViewer.LocalReport.ReportPath = Server.MapPath(@"\Reportes\ReportesTrasacciones.rdlc");
-            MyEstudiantesReportViewer.LocalReport.DataSources.Clear();
-            MyEstudiantesReportViewer.LocalReport.DataSources.Add(new ReportDataSource("Trasacciones", Metodo.SegTransacciones()));
-            MyEstudiantesReportViewer.LocalReport.Refresh();
+            ReportTransacciones.ProcessingMode = ProcessingMode.Local;
+            ReportTransacciones.Reset();
+            ReportTransacciones.LocalReport.ReportPath = Server.MapPath(@"\Reportes\ReportTransacciones.rdlc");
+            ReportTransacciones.LocalReport.DataSources.Clear();
+            ReportTransacciones.LocalReport.DataSources.Add(new ReportDataSource("Trasacciones", Metodo.SegTransacciones()));
+            ReportTransacciones.LocalReport.DataSources.Add(new ReportDataSource("Clientes", Metodo.SegClientes()));
+            ReportTransacciones.LocalReport.Refresh();
         }
 
     }

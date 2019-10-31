@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-  public class Metodo
+    public class Metodo
     {
         public static int ToInt(string valor)
         {
@@ -28,5 +28,17 @@ namespace BLL
 
             return list;
         }
+
+        public static List<Clientes> SegClientes()
+        {
+            Expression<Func<Clientes, bool>> filtro = p => true;
+            RepositorioBase<Clientes> repositorio = new RepositorioBase<Clientes>();
+            List<Clientes> list = new List<Clientes>();
+
+            list = repositorio.GetList(filtro);
+
+            return list;
+        }
+
     }
 }
