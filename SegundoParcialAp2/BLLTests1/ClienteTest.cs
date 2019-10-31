@@ -16,7 +16,7 @@ namespace BLLTests1
         public void GuardarTest()
         {
             Clientes clientes = new Clientes();
-            clientes.Nombre = "Ana";
+            clientes.Nombre = "Pedro";
             clientes.Balance = 200;
             RepositorioBase<Clientes> repositorioBase = new RepositorioBase<Clientes>();
             Assert.IsTrue(repositorioBase.Guardar(clientes));

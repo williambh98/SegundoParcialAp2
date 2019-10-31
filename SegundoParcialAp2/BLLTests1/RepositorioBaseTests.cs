@@ -16,7 +16,7 @@ namespace BLL.Tests
         public void GuardarTest()
         {
             Trasacciones trasacciones = new Trasacciones();
-            trasacciones.Tipo = "Credito";
+            trasacciones.Tipo = "Pedrito";
             trasacciones.Monto = 200;
             trasacciones.Fecha = DateTime.Now;
             RepositorioBase<Trasacciones> repositorioBase = new RepositorioBase<Trasacciones>();
