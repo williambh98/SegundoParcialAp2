@@ -376,7 +376,9 @@
             <TextRuns>
               <TextRun>
                 <Value>=First(Fields!Nombre.Value, "Clientes")</Value>
-                <Style />
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -384,9 +386,9 @@
         </Paragraphs>
         <rd:DefaultName>Nombre</rd:DefaultName>
         <Top>2.16578cm</Top>
-        <Left>2.67639cm</Left>
+        <Left>1.85089cm</Left>
         <Height>0.6cm</Height>
-        <Width>5.2305cm</Width>
+        <Width>2.37631cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -418,7 +420,7 @@
         <rd:DefaultName>Textbox12</rd:DefaultName>
         <Top>2.16578cm</Top>
         <Height>0.6cm</Height>
-        <Width>2.5cm</Width>
+        <Width>1.6745cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -440,6 +442,7 @@
                 <Value>Reporte Trasaccion</Value>
                 <Style>
                   <FontSize>18pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
